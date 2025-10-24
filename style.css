@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+label,
+input,
+button {
+  font-size: 23px;
+}
+
+form {
+  width: 400px;
+  margin-left: 5%;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+label {
+  margin-bottom: 4px;
+  display: block;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+#submit_button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+#submit_button:hover {
+  background-color: rgb(49, 49, 49);
+  scale: 1.02;
+  transition: 0.3s;
+}
+#circle {
+  border: 3px solid black;
+  line-height: 100px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 30px;
+  margin: 20px auto;
+  font-family: "Courier New", Courier, monospace;
+}
+#task_list {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 25px;
+  margin: 20px;
+  background-color: #8d8989;
+  max-height: 200px;
+}
+.made_task {
+  text-decoration: line-through;
+  color: rgb(53, 53, 53);
+}
+.profile_completeness {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+.profile_completeness h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.password_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.show_password {
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transform: translateX(290px);
+  position: fixed;
+}
+.show_password:hover {
+  scale: 1.03;
+}
+input[type="password"]::-ms-reveal {
+  display: none;
+}
